@@ -21,8 +21,8 @@ ASP.NET Core Web API додаток, який симулює роботу пар
         * [balance - приймає значення в діапазоні від 50 до 1000]
 
 5. Додати певне число машин (POST) 
-    _http://localhost:53577/api/cars/addrange/count_
-    [count - кількість машин для додавання на парковку]
+   * _http://localhost:53577/api/cars/addrange/count_
+      * [count - кількість машин для додавання на парковку]
 
 ## REST API: Parking
 
