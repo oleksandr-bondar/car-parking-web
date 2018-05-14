@@ -11,8 +11,8 @@ ASP.NET Core Web API додаток, який симулює роботу пар
         * [id - порядковий номер машини на парковці]
 
 3. Видалити машину (DELETE) 
-    _http://localhost:53577/api/cars/delete/id_
-    [id - порядковий номер машини на парковці]
+    * _http://localhost:53577/api/cars/delete/id_
+      * [id - порядковий номер машини на парковці]
 
 4. Додати машину (POST) 
     * _http://localhost:53577/api/cars/add_
