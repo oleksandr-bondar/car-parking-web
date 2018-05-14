@@ -3,54 +3,54 @@ ASP.NET Core Web API додаток, який симулює роботу пар
 
 ## REST API: Cars
 
--Список всіх машин (GET) 
-    http://localhost:53577/api/cars/all
+1. Список всіх машин (GET)
+    *  _http://localhost:53577/api/cars/all_
 
--Деталі по одній машині (GET) 
-    http://localhost:53577/api/cars/id
-    [id - порядковий номер машини на парковці]
+2. Деталі по одній машині (GET)
+    * _http://localhost:53577/api/cars/id_
+        * [id - порядковий номер машини на парковці]
 
--Видалити машину (DELETE) 
-    http://localhost:53577/api/cars/delete/id
-    [id - порядковий номер машини на парковці]
+3. Видалити машину (DELETE) 
+    * _http://localhost:53577/api/cars/delete/id_
+      * [id - порядковий номер машини на парковці]
 
--Додати машину (POST) 
-    http://localhost:53577/api/cars/add
-    http://localhost:53577/api/cars/add/type;balance
-    [type - приймає наступні значення: 1, 2, 3, 4, Passenger, Truck, Bus, Motorcycle]
-    [balance - приймає значення в діапазоні від 50 до 1000]
+4. Додати машину (POST) 
+    * _http://localhost:53577/api/cars/add_
+    * _http://localhost:53577/api/cars/add/type;balance_
+        * [type - приймає наступні значення: 1, 2, 3, 4, Passenger, Truck, Bus, Motorcycle]
+        * [balance - приймає значення в діапазоні від 50 до 1000]
 
--Додати певне число машин (POST) 
-    http://localhost:53577/api/cars/addrange/count
-    [count - кількість машин для додавання на парковку]
+5. Додати певне число машин (POST) 
+   * _http://localhost:53577/api/cars/addrange/count_
+      * [count - кількість машин для додавання на парковку]
 
 ## REST API: Parking
 
--Кількість вільних місць (GET) 
-    http://localhost:53577/api/parking/free
+1. Кількість вільних місць (GET) 
+    * _http://localhost:53577/api/parking/free_
 
--Кількість зайнятих місць (GET) 
-    http://localhost:53577/api/parking/occupied
+2. Кількість зайнятих місць (GET) 
+    * _http://localhost:53577/api/parking/occupied_
 
--Загальний дохід (GET) 
-    http://localhost:53577/api/parking/balance
+3. Загальний дохід (GET) 
+    * _http://localhost:53577/api/parking/balance_
 
--Загальна статистика (GET) 
-    http://localhost:53577/api/parking/all
+4. Загальна статистика (GET) 
+    * _http://localhost:53577/api/parking/all_
 
 ## REST API: Transactions
 
--Вивести Transactions.log (GET) 
-    http://localhost:53577/api/transactions/log
+1. Вивести Transactions.log (GET) 
+    * _http://localhost:53577/api/transactions/log_
 
--Вивести транзакції за останню хвилину (GET)
-    http://localhost:53577/api/transactions/history
+2. Вивести транзакції за останню хвилину (GET)
+    * _http://localhost:53577/api/transactions/history_
 
--Вивести транзакції за останню хвилину по одній конкретній машині (GET) 
-    http://localhost:53577/api/transactions/history/id
-    [id - порядковий номер машини на парковці]
+3. Вивести транзакції за останню хвилину по одній конкретній машині (GET) 
+    * _http://localhost:53577/api/transactions/history/id_
+        * [id - порядковий номер машини на парковці]
 
--Поповнити баланс машини (PUT) 
-    http://localhost:53577/api/transactions/recharge/id;amount
-    [id - порядковий номер машини на парковці]
-    [amount - приймає значення в діапазоні від 50 до 1000]
+4. Поповнити баланс машини (PUT) 
+    * _http://localhost:53577/api/transactions/recharge/id;amount_
+        * [id - порядковий номер машини на парковці]
+        * [amount - приймає значення в діапазоні від 50 до 1000]
